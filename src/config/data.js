@@ -1,0 +1,60 @@
+const trade_api = [
+  {
+    id: 1,
+    name: "Aarti Surfactants Rights",
+    opening_price: 51.9,
+    closing_price: 78,
+    todays_gain: 7.3,
+    todays_percentage_change: 35.27,
+  },
+  {
+    id: 2,
+    name: "Aarti ",
+    opening_price: 113,
+    closing_price: 98,
+    todays_gain: 15.2,
+    todays_percentage_change: 13.18,
+  },
+  {
+    id: 3,
+    name: "ABC Rights",
+    opening_price: 51.9,
+    closing_price: 55,
+    todays_gain: 3.1,
+    todays_percentage_change: 3.28,
+  },
+  {
+    id: 4,
+    name: "Apollo Hospitals",
+    opening_price: 451.9,
+    closing_price: 448,
+    todays_gain: 23,
+    todays_percentage_change: 35.27,
+  },
+  {
+    id: 5,
+    name: "Aarti Surfactants Rights",
+    opening_price: 51,
+    closing_price: 48,
+    todays_gain: 3,
+    todays_percentage_change: 2.27,
+  },
+  {
+    id: 6,
+    name: "Axis Bank Ltd.",
+    opening_price: 127.9,
+    closing_price: 127.0,
+    todays_gain: 23,
+    todays_percentage_change: 35.27,
+  },
+  {
+    id: 7,
+    name: "Bharat Petroleum Ltd.",
+    opening_price: 251,
+    closing_price: 260,
+    todays_gain: 3,
+    todays_percentage_change: 2.27,
+  },
+];
+
+export default trade_api;

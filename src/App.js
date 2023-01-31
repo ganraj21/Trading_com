@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from "@material-ui/core/Button";
+import Table from "./components/Table";
+import { useState } from "react";
 
 function App() {
+  const [value, setValue] = useState("gainer");
+
+  const font = "'Poppins', sans-serif";
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ fontFamily: font }}>
+      <div
+        className="container"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          alignItems: "center",
+          margin: "30px 0 0 0",
+        }}
+      >
+        <div className="tr_btns" style={{ gap: "20px", display: "flex" }}>
+          <Button
+            variant="contained"
+            color="primary"
+            value={"gainer"}
+            onClick={(e) => setValue(e.target.value)}
+          >
+            Gainer
+          </Button>
+          <Button
+            variant="outlined"
+            color="primary"
+            value={"losers"}
+            onClick={(e) => setValue(e.target.value)}
+          >
+            Losers
+          </Button>
+        </div>
+        <Table value={value} />
+      </div>
     </div>
   );
 }
