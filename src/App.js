@@ -1,7 +1,7 @@
 import Button from "@material-ui/core/Button";
 import Table from "./components/Table";
 import { useState } from "react";
-
+// import header from "./components/header";
 function App() {
   const [value, setValue] = useState("gainer");
 
@@ -9,6 +9,7 @@ function App() {
 
   return (
     <div className="App" style={{ fontFamily: font }}>
+      {/* <header /> */}
       <div
         className="container"
         style={{

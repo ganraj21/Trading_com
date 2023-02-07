@@ -49,12 +49,13 @@ const GainersandLosers = (props) => {
         <TableContainer>
           <Table>
             <TableHead>
-              <TableRow>
+              <TableRow style={{ textAlign: "center" }}>
                 {[
                   "Stock Name",
                   "Closing Price",
                   "Today's Gain",
                   "Percentage Change",
+                  "Add to Watchlist",
                 ].map((data) => (
                   <TableCell
                     style={{
@@ -127,6 +128,9 @@ const GainersandLosers = (props) => {
                         </span>
                         {row.todays_percentage_change}%
                       </div>
+                    </TableCell>
+                    <TableCell style={{ textAlign: "center" }}>
+                      {<i class="fas fa-solid fa-plus"></i>}
                     </TableCell>
                   </TableRow>
                 );
